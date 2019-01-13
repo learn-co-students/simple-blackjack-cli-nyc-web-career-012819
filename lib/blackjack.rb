@@ -66,6 +66,6 @@ def runner
   until card_total > 21
     card_total = hit?(card_total)
     display_card_total(card_total)
-    puts "Sorry, you hit 30. Thanks for playing!"
+    puts "Sorry, you hit #{card_total}. Thanks for playing!"
   end
 end
